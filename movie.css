@@ -1,0 +1,77 @@
+* {
+  font-family: Open Sans, sans-serif !important;
+}
+#head {
+  width: 95%;
+  background-color: #1ed760;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 5%;
+}
+#head > button {
+  margin: 1.5%;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  transition: 500ms;
+  font-size: 20px;
+  padding: 0.75rem;
+}
+#head > button:hover {
+  background-color: purple;
+  color: aliceblue;
+}
+#content {
+  text-align: center;
+}
+#move {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap : 60px;
+}
+#move img {
+  width: 14%;
+  height: 58%;
+}
+.card {
+  min-width: 260px;
+  margin: 30px;
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 19px;
+  transition: all 200ms ease-in;
+}
+.card:hover {
+  transform: scale(1.005);
+  background: #d0f8de;
+  box-shadow: 17px 17px 34px #159743, -17px -17px 34px #27ff7d;
+}
+.card > img {
+  min-width: 250px;
+  padding-bottom: 1rem;
+}
+.card > * {
+  padding-left: 1rem;
+}
+#buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#buttons > button {
+  min-width: 12vw;
+  min-height: 3vw;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #1ed760;
+  border-radius: 1.5vw;
+  padding: 0.75rem;
+  margin: 1rem;
+  border: none;
+  transition: all 300ms ease-in;
+}
+#buttons > button:hover {
+  background-color: aliceblue;
+  color: #1ed760;
+}
+
+

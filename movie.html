@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="movie.css" />
+    <style>
+      #mov{
+        width: 15%;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        padding : 1%;
+        margin-left: 40px;
+      }
+      #btn{
+        width: 12%;
+        background-color: rgb(252, 33, 70);
+        color: white;
+        cursor: pointer;
+        display: block;
+        padding: 0.3%;
+        margin-bottom: 30px;
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head">
+      <button onclick="(location.href ='sign-up.html' )">Sign Up</button>
+      <button onclick="(location.href ='login.html' )">Login</button>
+      <button onclick="(location.href ='movie.html' )">Home</button>
+    </div>
+     <h1 id="content"></h1>
+
+    <div id="buttons">
+      <button onclick="high()">Sort High to Low</button>
+      <button onclick="low()">Sort Low to High</button>
+      <button onclick="app(arr)">Popular</button>
+    </div>
+    <input type="text" id="mov" placeholder="Movie Name"/>
+    <button id="btn" onclick = "movies()">Search</button>
+    <div id="move"></div>
+    <h2 style="text-align: center; color: #1ed760">
+      Already filnished Watching all, Dont Worry There is more coming ;)
+    </h2>
+  </body>
+</html>
+<script src="movie.js"></script>

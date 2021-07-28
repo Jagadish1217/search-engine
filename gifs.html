@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        
+        #h1 {
+            width: 38%;
+            text-align: right;
+            margin: 60px auto 20px;
+            opacity: 0.5;
+            cursor: pointer;
+            color: rgb(95, 7, 61);
+            font-weight: 1000;
+            font-size: 35px;
+        }
+
+        .main-div {
+            border: 1px solid #0188cc;
+            width: 40vw;
+            height: auto;
+            border-radius: 23px;
+            margin: auto;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+  </head>
+   <h1 id="h1"></h1>
+    <div id="main-div" class="main-div"></div>
+</html>
+<script>
+  let field = document.getElementById("main-div");
+  let h1 = document.getElementById("h1");
+  let arr = ["Movie is not found"];
+  setTimeout(() => {
+    field.setAttribute("class", "hide");
+    h1.innerHTML = i;
+  }, 2000);
+  for (var a = 0; a < arr.length; a++) {
+    field.innerHTML = null;
+    let i = arr[a];
+    let stop = setInterval(function () {
+      h1.innerHTML = null;
+      h1.innerHTML = i;
+      window.location.href = "movie.html";
+      clearInterval(stop);
+    }, 2000);
+    h1.innerHTML = arr[0];
+  }
+</script>
